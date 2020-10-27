@@ -8,9 +8,8 @@ import org.testng.annotations.Test;
 public class GGG {
     @Test
     public void testDriver(){
-        DriverManager.createInstance("chrome");
-        DriverManager.getWebDriver().get("https://www.google.pl");
 
-
+    BaseTest besets = new BaseTest();
+    besets.setUp("chrome");
     }
 }
