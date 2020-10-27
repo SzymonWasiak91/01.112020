@@ -18,17 +18,20 @@ public class DriverFactory {
 
         if(browserName.equalsIgnoreCase("Chrome")){
             if (System.getProperty("webdriver.chrome.driver") == null) {
-                System.setProperty("webdriver.chrome.driver", "C:\\Users\\wasia\\IdeaProjects\\Project1\\src\\main\\resources\\Drivers\\chromedriver.exe");
+                String chromePath = "C:\\Users\\wasia\\IdeaProjects\\Project1\\src\\main\\resources\\Drivers\\chromedriver.exe";
+                System.setProperty("webdriver.chrome.driver", chromePath );
                 driver = new ChromeDriver();
             }
         }if(browserName.equalsIgnoreCase("Opera")){
             if (System.getProperty("webdriver.opera.driver") == null) {
-                System.setProperty("webdriver.opera.driver", "C:\\Users\\wasia\\IdeaProjects\\Project1\\src\\main\\resources\\Drivers\\operadriver.exe");
+                String operaPath = "C:\\Users\\wasia\\IdeaProjects\\Project1\\src\\main\\resources\\Drivers\\operadriver.exe";
+                System.setProperty("webdriver.opera.driver", operaPath);
                 driver = new OperaDriver();
             }
         }if(browserName.equalsIgnoreCase("Firefox")){
             if (System.getProperty("webdriver.gecko.driver") == null) {
-                System.setProperty("webdriver.gecko.driver", "C:\\Users\\wasia\\IdeaProjects\\Project1\\src\\main\\resources\\Drivers\\geckodriver.exe");
+                String firefoxPath = "C:\\Users\\wasia\\IdeaProjects\\Project1\\src\\main\\resources\\Drivers\\geckodriver.exe";
+                System.setProperty("webdriver.gecko.driver", firefoxPath);
                 driver = new FirefoxDriver();
             }
         }

@@ -23,13 +23,13 @@ dlatego też getter i seter posiada meteodę get i set wewnątrz metody
     Weryfikacja czy zmienne są puste jeśli są, następuje ustawienie oraz przesłania
     ścieżki absolutnej do driera oraz ustawienie pożądanegio drivera przeglądarki
      */
-    public static void createInstance() {
+    public static void createInstance(String browserNamme) {
 // Zostały przeniesione do klasy DriverFactory
 //        if (System.getProperty("webdriver.chrome.driver") == null) {
 //            System.setProperty("webdriver.chrome.driver", "C:\\Users\\wasia\\IdeaProjects\\Project1\\src\\main\\resources\\Drivers\\chromedriver.exe");
 //            setWebDriver(new ChromeDriver());
 //        }
-        setWebDriver(DriverFactory.createWebDriverInstance("Chrome"));
+        setWebDriver(DriverFactory.createWebDriverInstance(browserNamme));
 
 
 
