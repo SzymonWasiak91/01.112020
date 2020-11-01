@@ -43,9 +43,9 @@ public class Page2 {
             priceOd.sendKeys(Keys.ENTER);
 
         } catch (StaleElementReferenceException e) {
-            priceOd.click();
-            priceOd.sendKeys(odCena);
-            priceOd.sendKeys(Keys.ENTER);
+//            priceOd.click();
+//            priceOd.sendKeys(odCena);
+//            priceOd.sendKeys(Keys.ENTER);
         }
 
         methods.waintUntilElemenClicable(priceDo);
@@ -55,9 +55,9 @@ public class Page2 {
             priceDo.sendKeys(Keys.ENTER);
 
         } catch (EnumConstantNotPresentException e) {
-            priceDo.click();
-            priceDo.sendKeys(doCena);
-            priceDo.sendKeys(Keys.ENTER);
+//            priceDo.click();
+//            priceDo.sendKeys(doCena);
+//            priceDo.sendKeys(Keys.ENTER);
         }
 
 

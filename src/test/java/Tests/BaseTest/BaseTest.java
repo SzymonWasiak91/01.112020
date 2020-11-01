@@ -13,7 +13,7 @@ public class BaseTest {
 
     @BeforeTest
 
-    public void setUp(String browserName) {
+    public static void setUp(String browserName) {
 
         DriverManager.createInstance(browserName);
         WebDriver driver = DriverManager.getWebDriver();

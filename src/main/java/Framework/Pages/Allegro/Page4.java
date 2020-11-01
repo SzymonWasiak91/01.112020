@@ -44,6 +44,5 @@ public class Page4 {
         methods.moetToWebelement(textTwojKoszykJestPusty);
         String text = textTwojKoszykJestPusty.getText();
         return text;
-
     }
 }

@@ -11,7 +11,7 @@ import org.openqa.selenium.support.PageFactory;
 public class Page1 {
     @FindBy(xpath = "//button[text()='przejdź dalej']")
     private WebElement buttonPrzejdzDalej;
-    @FindBy(xpath = "/html/body/div[2]/div[2]/header/div/div/div/div/form/input")
+    @FindBy(xpath = "//input[@type='search']")
     private WebElement searchInput;
     @FindBy(xpath = "/html/body/div[2]/div[2]/header/div/div/div/div/form/button")
     private WebElement buttonSzukaj;
