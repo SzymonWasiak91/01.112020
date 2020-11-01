@@ -16,34 +16,33 @@ public class Page4 {
     private WebElement textTwojKoszykJestPusty;
 
 
-
-
-
     WebDriver driver = DriverManager.getWebDriver();
     Methods methods = new Methods(driver);
 
 
-    public Page4(){
-        PageFactory.initElements(driver,this);
+    public Page4() {
+        PageFactory.initElements(driver, this);
         this.methods = methods;
 
     }
 
-    public void clickAndSetCountInput(String countSize){
+    public void clickAndSetCountInput(String countSize) {
         methods.waintUntilElemenClicable(coutNumberInput);
         coutNumberInput.click();
         coutNumberInput.clear();
         coutNumberInput.sendKeys(countSize);
     }
-    public void deleteItem(){
+
+    public void deleteItem() {
         methods.moetToWebelement(deletItemButton);
         methods.waintUntilElemenClicable(deletItemButton);
         deletItemButton.click();
     }
-    public String getLastText(){
-        methods.moetToWebelement(textTwojKoszykJestPusty);
+
+    public String getLastText() {
         methods.waintUntilElementVisible(textTwojKoszykJestPusty);
-       String text =  textTwojKoszykJestPusty.getText();
+        methods.moetToWebelement(textTwojKoszykJestPusty);
+        String text = textTwojKoszykJestPusty.getText();
         return text;
 
     }

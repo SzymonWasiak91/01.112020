@@ -14,22 +14,21 @@ public class Page3 {
     private WebElement goToCartButton;
 
 
-
-
     WebDriver driver = DriverManager.getWebDriver();
     Methods methods;
 
-    public Page3(){
-        PageFactory.initElements(driver,this);
+    public Page3() {
+        PageFactory.initElements(driver, this);
         this.methods = new Methods(driver);
     }
 
-    public void clickAddCartButton(){
+    public void clickAddCartButton() {
         methods.moetToWebelement(addCartButton);
         methods.waintUntilElemenClicable(addCartButton);
         addCartButton.click();
     }
-    public void clickAddToCartButton(){
+
+    public void clickAddToCartButton() {
         methods.moetToWebelement(goToCartButton);
         methods.waintUntilElemenClicable(goToCartButton);
         goToCartButton.click();

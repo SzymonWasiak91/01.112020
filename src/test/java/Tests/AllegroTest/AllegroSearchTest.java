@@ -17,10 +17,10 @@ public class AllegroSearchTest {
         Page1 page1 = new Page1();
         page1.getURL("https://allegro.pl/");
         page1.clickSearchButton();
-        page1.searchItem("buty");
+        page1.searchItem("kalosze");
         Page2 page2 = new Page2();
         page2.setView();
-        page2.setPriceRange("100","150");
+        page2.setPriceRange("200","230");
         page2.clicToFirstItem();
         Page3 page3 = new Page3();
         page3.clickAddCartButton();
