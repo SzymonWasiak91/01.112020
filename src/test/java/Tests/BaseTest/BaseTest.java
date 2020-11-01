@@ -22,14 +22,9 @@ public class BaseTest {
 
     @AfterTest
     public static void tearDown() {
-        DriverManager.getWebDriver().quit();
-        try {
+
             DriverManager.getWebDriver().quit();
-        } catch (Exception e) {
-            System.out.println("Browser closed already, " +
-                    "did not need to quit after all");
-            e.printStackTrace();
-        }
+
     }
 
 
