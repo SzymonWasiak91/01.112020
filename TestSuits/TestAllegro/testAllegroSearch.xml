@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Zestaw testów allegro wyszukujących przedmiot">
+    <test name="Testy wyszukiwania E2E">
+        <classes>
+            <class name="Tests.AllegroTest.AllegroSearchTest">
+                <methods>
+                    <parameter name="item" value="telefon"></parameter>
+                    <parameter name="browserName" value="chrome"></parameter>
+                    <parameter name="priceOd" value="100"></parameter>
+                    <parameter name="priceDo" value="350"></parameter>
+                    <include name="searchItem">
+
+                    </include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

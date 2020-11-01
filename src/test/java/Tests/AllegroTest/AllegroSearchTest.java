@@ -6,21 +6,23 @@ import Framework.Pages.Allegro.Page3;
 import Framework.Pages.Allegro.Page4;
 import Tests.BaseTest.BaseTest;
 import org.testng.Assert;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 public class AllegroSearchTest {
     @Test
-    public void testDriver() throws InterruptedException {
+    @Parameters({"item","browserName","priceOd","priceDo"})
+    public void searchItem(String item,String browserName,String priceOd, String priceDo) throws InterruptedException {
 
     BaseTest baseTest = new BaseTest();
-    baseTest.setUp("chrome");
+    baseTest.setUp(browserName);
         Page1 page1 = new Page1();
         page1.getURL("https://allegro.pl/");
         page1.clickSearchButton();
-        page1.searchItem("kalosze");
+        page1.searchItem(item);
         Page2 page2 = new Page2();
         page2.setView();
-        page2.setPriceRange("200","230");
+        page2.setPriceRange(priceOd,priceDo);
         page2.clicToFirstItem();
         Page3 page3 = new Page3();
         page3.clickAddCartButton();
