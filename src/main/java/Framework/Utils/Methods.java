@@ -28,11 +28,24 @@ public class Methods {
         wait.withTimeout(Duration.ofSeconds(1));
         wait.pollingEvery(Duration.ofSeconds(1));
 
+    }public  void waintUntilElementVisibleLocator(By locator) {
+        WebDriverWait wait = new WebDriverWait(driver, 20);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+        wait.withTimeout(Duration.ofSeconds(1));
+        wait.pollingEvery(Duration.ofSeconds(1));
+
     }
 
     public void waintUntilElemenClicable(WebElement element) {
         WebDriverWait wait = new WebDriverWait(driver, 20);
         wait.until(ExpectedConditions.elementToBeClickable(element));
+        wait.withTimeout(Duration.ofSeconds(1));
+        wait.pollingEvery(Duration.ofSeconds(1));
+
+    }
+    public void waintUntilElemenClicableLocator(By locator) {
+        WebDriverWait wait = new WebDriverWait(driver, 20);
+        wait.until(ExpectedConditions.elementToBeClickable(locator));
         wait.withTimeout(Duration.ofSeconds(1));
         wait.pollingEvery(Duration.ofSeconds(1));
 

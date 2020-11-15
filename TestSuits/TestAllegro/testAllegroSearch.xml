@@ -5,10 +5,10 @@
         <classes>
             <class name="Tests.AllegroTest.AllegroSearchTest">
                 <methods>
-                    <parameter name="item" value="telefon"></parameter>
+                    <parameter name="przedmiot" value="kalosze"></parameter>
                     <parameter name="browserName" value="chrome"></parameter>
                     <parameter name="priceOd" value="100"></parameter>
-                    <parameter name="priceDo" value="350"></parameter>
+                    <parameter name="priceDo" value="200"></parameter>
                     <include name="searchItem">
 
                     </include>
@@ -17,35 +17,35 @@
         </classes>
     </test>
 
-    <test name="Testy wyszukiwania E2E- firefox">
-        <classes>
-            <class name="Tests.AllegroTest.AllegroSearchTest">
-                <methods>
-                    <parameter name="item" value="kalosze"></parameter>
-                    <parameter name="browserName" value="firefox"></parameter>
-                    <parameter name="priceOd" value="50"></parameter>
-                    <parameter name="priceDo" value="100"></parameter>
-                    <include name="searchItem">
+<!--    <test name="Testy wyszukiwania E2E- firefox">-->
+<!--        <classes>-->
+<!--            <class name="Tests.AllegroTest.AllegroSearchTest">-->
+<!--                <methods>-->
+<!--                    <parameter name="item" value="kalosze"></parameter>-->
+<!--                    <parameter name="browserName" value="firefox"></parameter>-->
+<!--                    <parameter name="priceOd" value="50"></parameter>-->
+<!--                    <parameter name="priceDo" value="100"></parameter>-->
+<!--                    <include name="searchItem">-->
 
-                    </include>
-                </methods>
-            </class>
-        </classes>
-    </test>
+<!--                    </include>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--        </classes>-->
+<!--    </test>-->
 
-    <test name="Testy wyszukiwania E2E">
-        <classes>
-            <class name="Tests.AllegroTest.AllegroSearchTest">
-                <methods>
-                    <parameter name="item" value="kijek"></parameter>
-                    <parameter name="browserName" value="opera"></parameter>
-                    <parameter name="priceOd" value="10"></parameter>
-                    <parameter name="priceDo" value="100"></parameter>
-                    <include name="searchItem">
+<!--    <test name="Testy wyszukiwania E2E">-->
+<!--        <classes>-->
+<!--            <class name="Tests.AllegroTest.AllegroSearchTest">-->
+<!--                <methods>-->
+<!--                    <parameter name="item" value="kijek"></parameter>-->
+<!--                    <parameter name="browserName" value="opera"></parameter>-->
+<!--                    <parameter name="priceOd" value="10"></parameter>-->
+<!--                    <parameter name="priceDo" value="100"></parameter>-->
+<!--                    <include name="searchItem">-->
 
-                    </include>
-                </methods>
-            </class>
-        </classes>
-    </test>
+<!--                    </include>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--        </classes>-->
+<!--    </test>-->
 </suite>

@@ -11,33 +11,27 @@ import org.testng.annotations.Test;
 
 public class AllegroSearchTest {
     @Test
-    @Parameters({"item","browserName","priceOd","priceDo"})
-    public void searchItem(String item,String browserName,String priceOd, String priceDo) throws InterruptedException {
+    @Parameters({"przedmiot", "browserName", "priceOd", "priceDo"})
+    public void searchItem(String przedmiot, String browserName, String priceOd, String priceDo) throws InterruptedException {
 
-    BaseTest baseTest = new BaseTest();
-    baseTest.setUp(browserName);
+        BaseTest baseTest = new BaseTest();
+        baseTest.setUp(browserName);
         Page1 page1 = new Page1();
         page1.getURL("https://allegro.pl/");
-        page1.clickSearchButton();
-        page1.searchItem(item);
+        page1.klikButtonPrzejdzDalej();
+        page1.wyszukaj(przedmiot);
         Page2 page2 = new Page2();
-        page2.setView();
-        page2.setPriceRange(priceOd,priceDo);
-        page2.clicToFirstItem();
+        page2.zakresCen(priceOd, priceDo);
+        page2.zaznaczZamianeWidoku();
+        page2.dodajPierwszyPrzedmiot();
         Page3 page3 = new Page3();
-        page3.clickAddCartButton();
-        page3.clickAddToCartButton();
+        page3.dodajDoKoszyka();
+        page3.idzDoKoszyka();
         Page4 page4 = new Page4();
-        page4.clickAndSetCountInput("10");
-        page4.deleteItem();
-        String text1 = page4.getLastText();
-        Assert.assertEquals(text1,"Twój koszyk jest pusty");
-
-
-
-
-
-      //  baseTest.tearDown();
+        page4.usunPrzedmiot();
+        String text1 = page4.pobierzTextKoncowy();
+        Assert.assertEquals(text1, "Twój koszyk jest pusty");
+        baseTest.tearDown();
 
     }
 }

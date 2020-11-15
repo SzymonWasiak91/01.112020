@@ -1,47 +1,47 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 94.308 s <<< FAILURE! - in TestSuite
-searchItem(Tests.AllegroTest.AllegroSearchTest)  Time elapsed: 37.794 s  <<< FAILURE!
+Tests run: 3, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 95.234 s <<< FAILURE! - in TestSuite
+searchItem(Tests.AllegroTest.AllegroSearchTest)  Time elapsed: 30.997 s  <<< FAILURE!
 org.openqa.selenium.WebDriverException: 
 chrome not reachable
-  (Session info: chrome=86.0.4240.111)
+  (Session info: chrome=86.0.4240.193)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-8C50GRG', ip: '192.168.0.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
+System info: host: 'DESKTOP-8C50GRG', ip: '192.168.0.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.111, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\wasia\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55900}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 573c501c2263e7ca5f89efdbb047b118
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.193, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\wasia\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50185}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: f5a217fcc19b01baf0793926653cc9f8
 *** Element info: {Using=xpath, value=//button[text()='przejdź dalej']}
 	at Tests.AllegroTest.AllegroSearchTest.searchItem(AllegroSearchTest.java:21)
 
-searchItem(Tests.AllegroTest.AllegroSearchTest)  Time elapsed: 28.889 s  <<< FAILURE!
+searchItem(Tests.AllegroTest.AllegroSearchTest)  Time elapsed: 34.699 s  <<< FAILURE!
 org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //button[text()='przejdź dalej']' (tried for 20 second(s) with 500 milliseconds interval)
 	at Tests.AllegroTest.AllegroSearchTest.searchItem(AllegroSearchTest.java:21)
 Caused by: org.openqa.selenium.NoSuchElementException: 
 Unable to locate element: //button[text()='przejdź dalej']
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-8C50GRG', ip: '192.168.0.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
+System info: host: 'DESKTOP-8C50GRG', ip: '192.168.0.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 82.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201014125134, moz:geckodriverVersion: 0.27.0, moz:headless: false, moz:processID: 19616, moz:profile: C:\Users\wasia\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 8aea4799-470a-41aa-b10b-56ace3e9cf01
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 82.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201014125134, moz:geckodriverVersion: 0.27.0, moz:headless: false, moz:processID: 9492, moz:profile: C:\Users\wasia\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 3bc527e3-520f-435b-93f3-acc20ffd74cc
 *** Element info: {Using=xpath, value=//button[text()='przejdź dalej']}
 	at Tests.AllegroTest.AllegroSearchTest.searchItem(AllegroSearchTest.java:21)
 
-searchItem(Tests.AllegroTest.AllegroSearchTest)  Time elapsed: 26.403 s  <<< FAILURE!
+searchItem(Tests.AllegroTest.AllegroSearchTest)  Time elapsed: 28.606 s  <<< FAILURE!
 org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //button[text()='przejdź dalej']' (tried for 20 second(s) with 500 milliseconds interval)
 	at Tests.AllegroTest.AllegroSearchTest.searchItem(AllegroSearchTest.java:21)
 Caused by: org.openqa.selenium.NoSuchElementException: 
 no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='przejdź dalej']"}
-  (Session info: chrome=86.0.4240.80)
-  (Driver info: operadriver=86.0.4240.80 (7ed88b53bda45a2d19efb4f8706dd6b6cad0d3af-refs/branch-heads/4240@{#1183}),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
+  (Session info: chrome=86.0.4240.111)
+  (Driver info: operadriver=86.0.4240.80 (7ed88b53bda45a2d19efb4f8706dd6b6cad0d3af-refs/branch-heads/4240@{#1183}),platform=Windows NT 10.0.18363 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-8C50GRG', ip: '192.168.0.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
+System info: host: 'DESKTOP-8C50GRG', ip: '192.168.0.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
 Driver info: org.openqa.selenium.opera.OperaDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: opera, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:56072}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, opera: {operadriverVersion: 86.0.4240.80 (7ed88b53bda45..., userDataDir: C:\Users\wasia\AppData\Loca...}, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 86.0.4240.80, webStorageEnabled: true, webauthn:virtualAuthenticators: true}
-Session ID: 71d85fc5de2464a64d008c3aa534df69
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: opera, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:50356}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, opera: {operadriverVersion: 86.0.4240.80 (7ed88b53bda45..., userDataDir: C:\Users\wasia\AppData\Loca...}, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 86.0.4240.111, webStorageEnabled: true, webauthn:virtualAuthenticators: true}
+Session ID: d9b2774f5f78008075d0ae040d9b6ed5
 *** Element info: {Using=xpath, value=//button[text()='przejdź dalej']}
 	at Tests.AllegroTest.AllegroSearchTest.searchItem(AllegroSearchTest.java:21)
 
