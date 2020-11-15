@@ -32,6 +32,7 @@ public class AllegroSearchTest {
         String text1 = page4.pobierzTextKoncowy();
         Assert.assertEquals(text1, "Twój koszyk jest pusty");
         baseTest.tearDown();
+        baseTest.zamknijPrzegladarke();
 
     }
 }

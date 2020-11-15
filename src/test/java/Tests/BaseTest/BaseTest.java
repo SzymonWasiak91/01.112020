@@ -2,6 +2,7 @@ package Tests.BaseTest;
 
 import Framework.Base.DriverManager;
 import org.openqa.selenium.WebDriver;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 
@@ -25,6 +26,11 @@ public class BaseTest {
 
             DriverManager.getWebDriver().quit();
 
+    }
+    @AfterSuite
+    public static void zamknijPrzegladarke(){
+        DriverManager.getWebDriver().close();
+        DriverManager.getWebDriver().quit();
     }
 
 

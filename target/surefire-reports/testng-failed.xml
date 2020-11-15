@@ -4,9 +4,8 @@
   <test thread-count="5" name="Testy wyszukiwania E2E - chrome(failed)" verbose="0">
     <classes>
       <class name="Tests.AllegroTest.AllegroSearchTest">
-        <parameter name="browserName" value="chrome"/>
-        <parameter name="item" value="telefon"/>
-        <parameter name="priceDo" value="350"/>
+        <parameter name="przedmiot" value="kalosze"/>
+        <parameter name="priceDo" value="200"/>
         <parameter name="priceOd" value="100"/>
         <methods>
           <include name="searchItem" invocation-numbers="0"/>
@@ -14,30 +13,4 @@
       </class> <!-- Tests.AllegroTest.AllegroSearchTest -->
     </classes>
   </test> <!-- Testy wyszukiwania E2E - chrome(failed) -->
-  <test thread-count="5" name="Testy wyszukiwania E2E- firefox(failed)" verbose="0">
-    <classes>
-      <class name="Tests.AllegroTest.AllegroSearchTest">
-        <parameter name="browserName" value="firefox"/>
-        <parameter name="item" value="kalosze"/>
-        <parameter name="priceDo" value="100"/>
-        <parameter name="priceOd" value="50"/>
-        <methods>
-          <include name="searchItem" invocation-numbers="0"/>
-        </methods>
-      </class> <!-- Tests.AllegroTest.AllegroSearchTest -->
-    </classes>
-  </test> <!-- Testy wyszukiwania E2E- firefox(failed) -->
-  <test thread-count="5" name="Testy wyszukiwania E2E(failed)" verbose="0">
-    <classes>
-      <class name="Tests.AllegroTest.AllegroSearchTest">
-        <parameter name="browserName" value="opera"/>
-        <parameter name="item" value="kijek"/>
-        <parameter name="priceDo" value="100"/>
-        <parameter name="priceOd" value="10"/>
-        <methods>
-          <include name="searchItem" invocation-numbers="0"/>
-        </methods>
-      </class> <!-- Tests.AllegroTest.AllegroSearchTest -->
-    </classes>
-  </test> <!-- Testy wyszukiwania E2E(failed) -->
 </suite> <!-- Failed suite [Zestaw testów allegro wyszukujących przedmiot] -->
